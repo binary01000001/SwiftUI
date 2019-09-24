@@ -10,7 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        VStack {
+                  Text("Gravity Falls")
+                      .font(.title)
+                  Text("Una de las mejores series del mundo.")
+                      .font(.subheadline)
+                  .padding(.bottom, 30)
+                  Image("gravity")
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle().stroke(Color.white, lineWidth: 4))
+                    .shadow(radius: 10)
+              }
     }
 }
 
